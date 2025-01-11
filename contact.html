@@ -4,28 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
+    <link rel="stylesheet" href="./css/contact.css" />
   </head>
   <body>
-    <nav>
-      <div><a href="#" class="logo"> Derartu Nigatu</a></div>
-      <div><a href="home.html">Home</a></div>
-      <div><a href="about.html">About Me</a></div>
-      <div><a href="skills.html">Skills</a></div>
-      <div><a href="projects.html">Projects</a></div>
-      <div><a href="education.html">Education</a></div>
-      <div><a href="contact.html">Contact Me</a></div>
+    <header class="main">
+      <nav>
+        <a href="#" class="logo">Derartu</a>
+        <div class="nav-links" id="nav-links">
+          <a href="home.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="ham" id="hamburger">
+          <img
+            src="src/icons/Hamburger_icon.png"
+            alt="hamburger"
+            width="20"
+            height="20"
+          />
+        </div>
+      </nav>
+    </header>
 
-      <div>
-        <img
-          src="src/icons/toggle.png"
-          alt="hamburger"
-          width="20"
-          height="20"
-        />
-      </div>
-    </nav>
-
-    <header>
+    <header class="sub">
       <h1>Contact Me☎️</h1>
       <p>
         Feel free to reach out to me through the form below. I look forward to
@@ -33,14 +37,14 @@
       </p>
     </header>
 
-    <form action="submit_form.php" method="post">
+    <form action="https://formspree.io/f/xjkkpldz" method="POST">
       <div class="container">
         <div class="form-group">
           <label for="full-name"></label>
           <input
             type="text"
             id="full-name"
-            name="full-name"
+            name="Full Name"
             placeholder="Full Name"
             required
           />
@@ -50,7 +54,7 @@
           <input
             type="email"
             id="email-address"
-            name="email-address"
+            name="Email"
             placeholder="Email Address"
             required
           />
@@ -60,7 +64,7 @@
           <input
             type="tel"
             id="mobile-number"
-            name="mobile-number"
+            name="Mobile"
             placeholder="Mobile Number"
             required
           />
@@ -70,7 +74,7 @@
           <input
             type="text"
             id="email-subject"
-            name="email-subject"
+            name="Subject"
             placeholder="Email Subject"
             required
           />
@@ -79,7 +83,7 @@
           <label for="dialogue-box"></label>
           <textarea
             id="dialogue-box"
-            name="dialogue-box"
+            name="Message"
             placeholder="Your Message"
             required
           ></textarea>
@@ -89,6 +93,7 @@
         </div>
       </div>
     </form>
+
     <br />
 
     <footer>
@@ -107,5 +112,6 @@
         <a href="mailto:derartuge@gmail.com">derartuge@gmail.com</a>
       </p>
     </footer>
+    <script src="./js/style.js"></script>
   </body>
 </html>

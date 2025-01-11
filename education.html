@@ -4,29 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Education</title>
+    <link rel="stylesheet" href="./css/education.css" />
   </head>
   <body>
-    <nav>
-      <div><a href="#" class="logo"> Derartu Nigatu</a></div>
-      <div><a href="home.html">Home</a></div>
-      <div><a href="about.html">About Me</a></div>
-      <div><a href="skills.html">Skills</a></div>
-      <div><a href="projects.html">Projects</a></div>
-      <div><a href="education.html">Education</a></div>
-      <div><a href="contact.html">Contact</a></div>
-      <div>
-        <img
-          src="src/icons/toggle.png"
-          alt="hamburger"
-          width="20"
-          height="20"
-        />
-      </div>
-    </nav>
-
+    <header>
+      <nav>
+        <a href="#" class="logo">Derartu</a>
+        <div class="nav-links" id="nav-links">
+          <a href="home.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="ham" id="hamburger">
+          <img
+            src="src/icons/Hamburger_icon.png"
+            alt="hamburger"
+            width="20"
+            height="20"
+          />
+        </div>
+      </nav>
+    </header>
+    <br />
     <main>
       <article>
-        <section>
+        <section class="education-text">
           <h1>Let's talk about my Education path</h1>
           <p>
             I completed my high school education with great achievements, laying
@@ -42,50 +47,19 @@
           </p>
         </section>
         <section class="certificates">
-          <h2>Certifications</h2>
-
           <figure>
             <img
               src="src/images/certificate1.png"
               alt="SheCodes Certification1"
-              width="300"
-              height="200"
-            />
-            <img
-              src="src/images/certificate2.png"
-              alt="SheCodes Certification2"
-              width="300"
-              height="200"
             />
             <figcaption>SheCodes.io Certification</figcaption>
           </figure>
           <figure>
-            <a
-              href="src/documents/Introduction_to_Cybersecurity_Badge20241018-7-y4a2v7.pdf"
-              target="_blank"
-            >
-              <img
-                src="src/icons/pdf.png"
-                alt="PDF Icon"
-                width="50"
-                height="50"
-              />
-              <figcaption>Introduction to Cybersecurity Badge</figcaption>
-            </a>
-          </figure>
-          <figure>
-            <a
-              href="src/documents/python essential-1 certificate.pdf"
-              target="_blank"
-            >
-              <img
-                src="src/icons/pdf.png"
-                alt="PDF Icon"
-                width="50"
-                height="50"
-              />
-              <figcaption>Python Essentials Certificate</figcaption>
-            </a>
+            <img
+              src="src/images/certificate2.png"
+              alt="SheCodes Certification2"
+            />
+            <figcaption>SheCodes.io Certification</figcaption>
           </figure>
         </section>
         <section class="download-cv">
@@ -97,5 +71,9 @@
         </section>
       </article>
     </main>
+    <footer>
+      <p>&copy; 2025 Derartu Nigatu. All Rights Reserved.</p>
+    </footer>
+    <script src="./js/style.js"></script>
   </body>
 </html>

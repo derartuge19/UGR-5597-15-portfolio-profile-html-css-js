@@ -4,30 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skills Page</title>
+    <link rel="stylesheet" href="./css/skill.css" />
   </head>
   <body>
-    <nav>
-      <div><a href="#" class="logo"> Derartu Nigatu</a></div>
-      <div><a href="home.html">Home</a></div>
-      <div><a href="about.html">About Me</a></div>
-      <div><a href="skills.html">Skills</a></div>
-      <div><a href="projects.html">Projects</a></div>
-      <div><a href="education.html">Education</a></div>
-      <div><a href="contact.html">Contact</a></div>
-      <div>
-        <img
-          src="src/icons/toggle.png"
-          alt="hamburger"
-          width="20"
-          height="20"
-        />
-      </div>
-    </nav>
+    <header>
+      <nav>
+        <a href="#" class="logo">Derartu</a>
+        <div class="nav-links" id="nav-links">
+          <a href="home.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="ham" id="hamburger">
+          <img
+            src="src/icons/Hamburger_icon.png"
+            alt="hamburger"
+            width="20"
+            height="20"
+          />
+        </div>
+      </nav>
+    </header>
 
     <main>
-      <article>
-        <section>
-          <h2>let's dive into my skills</h2>
+      <section class="content">
+        <div class="left">
+          <h1>Let’s Dive into My Skills</h1>
           <p>
             As a software engineering student, I have developed a diverse skill
             set that spans across various areas of technology and development.
@@ -35,11 +40,11 @@
             experience building responsive websites and applications. I am
             familiar with multiple programming languages, including Python,
             Java, and JavaScript, which allow me to tackle a wide range of
-            technical challenges. Additionally, I have experience with
-            databases, version control using Git.
+            technical challenges. Additionally, I have experience with databases
+            and version control using Git.
           </p>
-          <br />
-          <table border="1" cellpadding="10" cellspacing="0">
+
+          <table>
             <thead>
               <tr>
                 <th>Category</th>
@@ -55,7 +60,7 @@
               </tr>
               <tr>
                 <td>Web Development</td>
-                <td>HTML,CSS,Node.js,React</td>
+                <td>HTML, CSS, Node.js, React</td>
                 <td>Intermediate</td>
               </tr>
               <tr>
@@ -65,13 +70,18 @@
               </tr>
               <tr>
                 <td>Database Management</td>
-                <td>SQL,MongoDB</td>
+                <td>SQL, MongoDB</td>
                 <td>Intermediate</td>
               </tr>
             </tbody>
           </table>
-        </section>
-      </article>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <p>&copy; 2025 Derartu Nigatu. All Rights Reserved.</p>
+    </footer>
+    <script src="./js/style.js"></script>
   </body>
 </html>

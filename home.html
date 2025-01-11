@@ -4,20 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <div><a href="#" class="logo"> Derartu Nigatu</a></div>
-        <div><a href="home.html">Home</a></div>
-        <div><a href="about.html">About Me</a></div>
-        <div><a href="skills.html">Skills</a></div>
-        <div><a href="projects.html">Projects</a></div>
-        <div><a href="education.html">Education</a></div>
-        <div><a href="contact.html">Contact</a></div>
-        <div>
+        <a href="#" class="logo">Derartu</a>
+        <div class="nav-links" id="nav-links">
+          <a href="home.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="ham" id="hamburger">
           <img
-            src="src/icons/toggle.png"
+            src="src/icons/Hamburger_icon.png"
             alt="hamburger"
             width="20"
             height="20"
@@ -40,40 +47,48 @@
           and technical expertise.
         </p>
         <div class="icons">
-          <a href="https://t.me/deni1904" target="_blank"
-            ><img
+          <a href="https://t.me/deni1904" target="_blank">
+            <img
               src="src/icons/Telegram.jpg"
               alt="Telegram"
               width="20"
               height="20"
-          /></a>
-          <a href="https://www.instagram.com/de_re_ni" target="_blank"
-            ><img
+            />
+          </a>
+          <a href="https://www.instagram.com/de_re_ni" target="_blank">
+            <img
               src="src/icons/instagram.jpg"
               alt="Instagram"
               width="20"
               height="20"
-          /></a>
+            />
+          </a>
           <a
             href="https://www.linkedin.com/in/derartu-nigatu-075a9b302/"
             target="_blank"
-            ><img
+          >
+            <img
               src="src/icons/linkedin.png"
               alt="LinkedIn"
               width="20"
               height="20"
-          /></a>
+            />
+          </a>
         </div>
       </div>
-      <br />
       <div class="right">
         <img
-          src="src/images/mine.jpg"
+          src="src/images/mine.png"
           alt="My Image"
           width="200"
           height="200"
         />
       </div>
     </div>
+
+    <footer>
+      <p>© 2024 Derartu Nigatu. All rights reserved.</p>
+    </footer>
+    <script src="./js/style.js"></script>
   </body>
 </html>

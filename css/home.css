@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  /* font-family: Arial, sans-serif;  */
+}
+
+header {
+  background-color: #4d9a9a;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  /* font-family: "Dancing Script", "Great Vibes", "cursive"; */
+  font-family: fantasy;
+  color: #001f54;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #003366;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.ham {
+  display: none;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.left {
+  flex-basis: 80%;
+}
+
+h1 {
+  font-size: 36px;
+  color: #001f54;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.right {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.right img {
+  border-radius: 50%;
+  width: 250px;
+  height: 300px;
+}
+
+footer {
+  background-color: #4d9a9a;
+  color: #002a4b;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Existing styles above... */
+
+/* Add styles for when the hamburger menu is active */
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  top: 60px; /* Adjust based on header size */
+  background-color: #4d9a9a;
+  width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Header (Hamburger Menu) */
+  .ham {
+    display: block; /* Show the hamburger menu icon */
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none; /* Hide the nav links by default */
+    position: absolute;
+    top: 60px; /* Position below the header */
+    right: 20px;
+    background-color: #4d9a9a;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1000; /* Ensure menu is on top */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show the nav links when active */
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center everything */
+    text-align: center; /* Center text */
+    padding: 20px;
+  }
+
+  .left {
+    margin-bottom: 20px; /* Space below the text */
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center; /* Center icons */
+    margin: 20px 0; /* Add spacing around the icons */
+  }
+
+  .right {
+    display: flex;
+    justify-content: center; /* Center the image */
+    margin-top: 20px; /* Space above the image */
+  }
+
+  .right img {
+    width: 150px; /* Smaller image for mobile */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+  }
+}
+
+/* tablet landscape */
+/* Tablet Landscape Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    flex-direction: row; /* Maintain row layout */
+    padding: 40px 10px; /* Adjust padding */
+  }
+
+  .left {
+    flex-basis: 70%; /* Give more space to the left section */
+    margin-right: 20px; /* Add margin to separate from right section */
+  }
+
+  .right {
+    flex-basis: 30%; /* Adjust right section width */
+    margin-top: 0; /* Remove top margin */
+  }
+
+  h1 {
+    font-size: 32px; /* Slightly smaller heading */
+  }
+
+  p {
+    font-size: 16px; /* Increase font size for better readability */
+  }
+
+  .icons {
+    justify-content: center; /* Center icons */
+    margin-top: 20px; /* Maintain spacing */
+  }
+
+  nav a {
+    font-size: 16px; /* Increase font size for better touch targets */
+    padding: 8px 12px; /* Increase padding for better touch targets */
+  }
+}

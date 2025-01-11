@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  background-color: #4d9a9a;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-family: fantasy;
+  color: #001f54;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #003366;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.ham {
+  display: none;
+}
+
+.sub {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sub h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.sub p {
+  padding: 5px;
+  font-size: 16px;
+  color: #666;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e4e4e4;
+  color: #333;
+  font-size: 14px;
+}
+
+textarea {
+  height: 200px; /* Adjust height as needed */
+  grid-column: span 2; /* Make textarea span two columns */
+  resize: none;
+  width: 100%;
+  /* width: 1000px; */
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: black;
+  background-color: #4c5b61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: flex-start; /* Align button to the left under the textarea */
+}
+
+button:hover {
+  background-color: #3a7c7c;
+}
+
+footer {
+  display: flex;
+  background-color: #4d9a9a;
+  justify-content: center;
+  gap: 5px;
+  color: #fff;
+  padding: 15px 0;
+}
+
+footer a {
+  color: #001f54;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 5px 0;
+}
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  top: 60px; /* Adjust based on header size */
+  background-color: #4d9a9a;
+  width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .ham {
+    display: block; /* Show hamburger icon on mobile */
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none; /* Hide nav links by default on mobile */
+    position: absolute; /* Positioning for dropdown */
+    top: 60px; /* Adjust based on header size */
+    right: 0; /* Align to the right */
+    width: 250px; /* Make the menu narrower */
+    background-color: #4d9a9a; /* Match nav background */
+    z-index: 1; /* Ensure it's on top */
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  /* When active, show the nav links */
+  .nav-links .active {
+    display: flex;
+    align-items: flex-end; /* Align the links to the left */
+  }
+
+  nav a {
+    color: #003366;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 100%; /* Make links fill the width of the menu */
+    text-align: center;
+    border-bottom: 1px solid #fff; /* Add a separator between links */
+  }
+
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between elements */
+    align-items: stretch; /* Ensure all items take full width */
+  }
+
+  input,
+  textarea {
+    width: 100%; /* Make inputs take full width */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  textarea {
+    height: 150px; /* Reduce height for smaller screens */
+  }
+
+  button {
+    align-self: flex-start; /* Align button to the left */
+    padding: 6px 12px; /* Adjust button size for smaller screens */
+    font-size: 12px; /* Smaller font size */
+  }
+  footer {
+    display: flex;
+    background-color: #4d9a9a;
+    justify-content: center;
+    gap: 2px;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 12px;
+  }
+  footer a {
+    color: #001f54;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  footer p {
+    margin: 2px 0;
+  }
+}
